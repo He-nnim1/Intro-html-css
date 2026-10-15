@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            color: #A82020;
+            background: #F8E0A4;
+            font-family: "Sansation", sans-serif;
+        }
+
+        form {
+            width: 35%;
+            border: 1px solid #A82020;
+            padding: 16px;
+            margin: auto;
+
+        }
+
+        label {
+            color: #31AAA9;
+        }
+
+        .full-width {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            margin-bottom: 12px;
+        }
+
+        button {
+            width: 100%;
+            border-color: #6C1A1A;
+            padding: 16px;
+            margin: 10px;
+            margin: auto;
+            border-radius: 10px;
+            font-size: large;
+
+        }
+
+        .space {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- text, email, password, number, date , radio, checkbox, select, submit -->
+
+
+    <form>
+
+        <label for="full_name">Names</label>
+        <input class="full-width" type="text" required id="full_name" name="full_name" placeholder="Jane Doe">
+
+        <br>
+        <label for="email">Email</label>
+        <input class="full-width" type="email" required id="email" name="email" placeholder="doe@example.com">
+
+        <br>
+        <label for="pass">Password</label>
+        <input class="full-width" type="password" required id="pass" name="pass" placeholder="********">
+
+        <br>
+        <label for="dob">Date of Birth</label>
+
+        <input class="full-width" type="date" min="2008-01-01" max="2009-08-31" required id="dob" name="dob">
+
+        <br>
+        <label for="weight">Weight</label>
+        <input class="full-width" type="number" min="30" max="250" step="0.01" required id="weight" name="weight"
+            placeholder="Weight in Kgs">
+
+
+        <!-- name must be the same for radio buttons -->
+        <br>
+        <label>Select your gender</label>
+        <br>
+        <input type="radio" id="f" name="gender">
+        <label for="f">Female</label>
+
+        <br>
+        <input type="radio" id="m" name="gender">
+        <label for="m">Male</label>
+
+        <hr>
+        <br>
+
+
+        <label>Select your favourite meal </label>
+        <input type="checkbox" id="x" name="favourite food">
+        <label for="x">Pizza</label>
+
+        <br>
+        <input type="checkbox" id="y" name="favourite food">
+        <label for="y">Burger</label>
+
+        <br>
+        <input class="space" type="checkbox" id="z" name="favourite food">
+        <label for="z">Ugali</label>
+
+        <br>
+        <label>Select your county</label>
+        <select class="full-width" name="" id="">
+            <option>Select a county</option>
+            <option value="">Mombasa</option>
+            <option value="">Nairobi</option>
+            <option value="">Nakuru</option>
+            <option value="">Kisumu</option>
+            <option value="">Kiambu</option>
+        </select>
+
+
+
+
+
+
+        <br>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
