@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fruktur:ital@0;1&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: "Fruktur", system-ui;
+            font-optical-sizing: auto;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            /* background: #bab9b9; */
+            border-bottom: 1px solid #aba9a9;
+        }
+
+        .content {
+            /* background-color: #dddd3e; */
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            /*for vertical alignment */
+            align-items: center;
+
+        }
+
+        .logo img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .content ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        .content li {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .content a {
+            text-decoration: none;
+            color: #0e0ef6;
+            padding: 12px 14px;
+            text-transform: capitalize;
+        }
+
+        .content a:hover {
+            /* color: #7c7cf3; */
+            background: #ededb5;
+            /* text-decoration: underline; */
+            /* border-bottom: 1px solid #0b0b0b;*/
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="content">
+            <div class="logo">
+                <img src="images/delivery-truck (1).png" alt="logo">
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Get help</a></li>
+                <li><a href="#">Team</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+</body>
+
+</html>
