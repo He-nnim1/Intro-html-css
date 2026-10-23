@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Roboto", sans-serif; */
+
+:root {
+    --brand-green: #159957;
+    --brand-dark: #1f2d3d;
+    --soft-bg: #f4f8f7;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--brand-dark)
+}
+
+.navbar-brand {
+    color: var(--brand-green);
+    font-size: 1.4rem;
+}
+
+#goods {
+    color: var(--brand-dark);
+}
+
+.navbar-brand:hover {
+    color: #136c3f;
+}
+
+.nav-link {
+    color: #536171 !important;
+    font-weight: 500;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: var(--brand-green) !important;
+}
+
+/* .nav-link:hover{
+    color: var(--brand-green) !important;
+} */
+
+.btn-success {
+    background-color: var(--brand-green);
+    border-color: var(--brand-green);
+    border-radius: 3px;
+    transition: width 5s ease-in;
+}
+
+.btn-success:hover {
+    background-color: #136c3f;
+    border-color: #136c3f;
+}
+
+.hero {
+    background: linear-gradient(to right, #f7faf9, #edf3f1);
+}
+
+.hero .small-heading {
+    color: var(--brand-green);
+    font-weight: 800;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+}
+
+.card {
+    border-color: #e5ece9;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: -2px -5px 38px 4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -2px -5px 38px 4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px -5px 38px 4px rgba(0, 0, 0, 0.75);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.45rem;
+    font-weight: 700;
+}
+
+.price {
+    color: var(--brand-green);
+    font-weight: 700;
+}
+
+.about-section {
+    background-color: var(--soft-bg);
+}
+
+.about-section i {
+    color: var(--brand-green);
+    font-size: 2.3rem;
+}
+
+footer {
+    background: #263942;
+    color: white;
+}
+
+footer li {
+    margin-bottom: 12px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: var(--brand-green);
+}
+
+.copyright {
+    background: #212c31;
+}
+
+/*  https: //animista.net/play/basic/slide/slide-right  */
+/* https: //animate.style/ */
